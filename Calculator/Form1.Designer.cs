@@ -28,80 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.lbSoA = new System.Windows.Forms.Label();
+            this.lbSoB = new System.Windows.Forms.Label();
+            this.btCong = new System.Windows.Forms.Button();
+            this.btTru = new System.Windows.Forms.Button();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtKQ = new System.Windows.Forms.TextBox();
+            this.lbKQ = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lbSoA
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Số A";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbSoA.AutoSize = true;
+            this.lbSoA.Location = new System.Drawing.Point(39, 46);
+            this.lbSoA.Name = "lbSoA";
+            this.lbSoA.Size = new System.Drawing.Size(30, 13);
+            this.lbSoA.TabIndex = 0;
+            this.lbSoA.Text = "Số A";
+            this.lbSoA.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lbSoB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Số B";
+            this.lbSoB.AutoSize = true;
+            this.lbSoB.Location = new System.Drawing.Point(39, 97);
+            this.lbSoB.Name = "lbSoB";
+            this.lbSoB.Size = new System.Drawing.Size(30, 13);
+            this.lbSoB.TabIndex = 1;
+            this.lbSoB.Text = "Số B";
+            this.lbSoB.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button1
+            // btCong
             // 
-            this.button1.Location = new System.Drawing.Point(99, 71);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btCong.Location = new System.Drawing.Point(121, 186);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(75, 23);
+            this.btCong.TabIndex = 3;
+            this.btCong.Text = "Cộng";
+            this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
-            // button2
+            // btTru
             // 
-            this.button2.Location = new System.Drawing.Point(158, 71);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(38, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btTru.Location = new System.Drawing.Point(285, 186);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(75, 23);
+            this.btTru.TabIndex = 3;
+            this.btTru.Text = " Trừ";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
             // 
-            // button3
+            // txtB
             // 
-            this.button3.Location = new System.Drawing.Point(99, 113);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(38, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "7";
-            this.button3.UseVisualStyleBackColor = true;
+            this.txtB.Location = new System.Drawing.Point(138, 90);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(137, 20);
+            this.txtB.TabIndex = 4;
+            this.txtB.Text = " ";
             // 
-            // button4
+            // txtA
             // 
-            this.button4.Location = new System.Drawing.Point(158, 113);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(38, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.txtA.Location = new System.Drawing.Point(138, 46);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(137, 20);
+            this.txtA.TabIndex = 4;
+            this.txtA.Text = " ";
+            // 
+            // txtKQ
+            // 
+            this.txtKQ.Location = new System.Drawing.Point(138, 131);
+            this.txtKQ.Name = "txtKQ";
+            this.txtKQ.Size = new System.Drawing.Size(137, 20);
+            this.txtKQ.TabIndex = 4;
+            this.txtKQ.Text = " ";
+            // 
+            // lbKQ
+            // 
+            this.lbKQ.AutoSize = true;
+            this.lbKQ.Location = new System.Drawing.Point(39, 138);
+            this.lbKQ.Name = "lbKQ";
+            this.lbKQ.Size = new System.Drawing.Size(44, 13);
+            this.lbKQ.TabIndex = 1;
+            this.lbKQ.Text = "Kết quả";
+            this.lbKQ.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(496, 261);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.txtKQ);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.btTru);
+            this.Controls.Add(this.btCong);
+            this.Controls.Add(this.lbKQ);
+            this.Controls.Add(this.lbSoB);
+            this.Controls.Add(this.lbSoA);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -111,12 +134,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label lbSoA;
+        private System.Windows.Forms.Label lbSoB;
+        private System.Windows.Forms.Button btCong;
+        private System.Windows.Forms.Button btTru;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.Label lbKQ;
     }
 }
 
