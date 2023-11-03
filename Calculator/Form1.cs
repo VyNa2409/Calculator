@@ -21,5 +21,28 @@ namespace Calculator
         {
 
         }
+
+      
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btCong_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(txtA.Text);
+            double b = double.Parse(txtB.Text);
+            double c = a + b;
+            txtKQ.Text = c.ToString();
+        }
+
+        private void btTru_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(txtA.Text);
+            double b = double.Parse(txtB.Text);
+            double c = a - b;
+            txtKQ.Text = c.ToString();
+        }
     }
 }
